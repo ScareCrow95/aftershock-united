@@ -20,4 +20,20 @@ export class UIStore {
       this.counter = data
     }
   }
+  get scrollCSS() {
+    return {
+      '&::-webkit-scrollbar': {
+        width: '4px',
+        background: 'transparent',
+      },
+      '&::-webkit-scrollbar-track': {
+        width: '6px',
+        background: 'transparent',
+      },
+      '&::-webkit-scrollbar-thumb': {
+        background: this.theme === 'dark' ? '#EC911D' : '#d6d6d6',
+        borderRadius: '24px',
+      },
+    }
+  }
 }

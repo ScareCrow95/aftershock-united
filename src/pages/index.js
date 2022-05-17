@@ -1,21 +1,29 @@
+import { Flex, Text } from '@chakra-ui/react'
 import { observer } from 'mobx-react-lite'
+import { HomeCarousel } from '../components/home/HomeCarousel'
+import Activity from '../components/home/Activity'
 import { useUIStore } from '../provider/rootStoreProvider'
-import { ChakraProvider, Flex } from '@chakra-ui/react'
-import { darkTheme } from '../theme/dark'
-import { lightTheme } from '../theme/light'
+import Trending from '../components/home/Trending'
 
 export default observer(() => {
-  const store = useUIStore()
+  const uiStore = useUIStore()
   return (
-    <ChakraProvider theme={store.theme === 'light' ? darkTheme : lightTheme}>
-      <Flex
-        style={{ cursor: 'pointer' }}
-        onClick={() => {
-          store.counter = store.counter + 1
-        }}>
-        hello {store.counter}
+    <Flex
+      borderLeftWidth='3px'
+      borderLeftColor='pr.100'
+      bg='sec.100'
+      direction='column'
+      w='1400px'
+      overflowY='auto'
+      maxH='calc(100vh - 120px)'
+      boxShadow='dark-lg'
+      css={uiStore.scrollCSS}>
+      <Flex direction='column'>
+        <HomeCarousel />
+        <Activity />
+        <Trending />
       </Flex>
-    </ChakraProvider>
+    </Flex>
   )
 })
 
