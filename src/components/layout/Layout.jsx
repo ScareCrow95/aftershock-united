@@ -26,7 +26,12 @@ const Layout = observer(({ children }) => {
         <Header />
         <NavigationMenu />
 
-        <Flex bg='sec.150' justify='center'>
+        <Flex
+          bg='sec.150'
+          justify='center'
+          background={`url('/bg.png')`}
+          backgroundSize='256px'
+          backgroundRepeat='repeat'>
           {children}
         </Flex>
       </Flex>

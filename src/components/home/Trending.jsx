@@ -8,7 +8,7 @@ const Trending = observer(() => {
   const uiStore = useUIStore()
   return (
     <Flex direction='column'>
-      <Flex bg='sec.300' mt={8}>
+      <Flex bg='sec.300' mt={8} position='relative'>
         <Text fontSize='2xl' fontWeight='semibold' p={4} color='pr.100'>
           Trending
         </Text>
