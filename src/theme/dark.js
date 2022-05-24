@@ -9,7 +9,7 @@ const breakpoints = createBreakpoints({
   '2xl': '96em',
 })
 
-const colors = {
+export const colors = {
   sec: {
     100: '#212121',
     150: '#1a1a1a',
@@ -30,6 +30,7 @@ const colors = {
     75: '#505050',
     100: '#555',
   },
+
   pr: {
     100: '#EC911D',
     200: '#B05D13',
@@ -56,7 +57,11 @@ const sizes = {}
 export const darkTheme = extendTheme({
   colors,
   sizes,
-  components: { Button: { baseStyle: { _focus: { boxShadow: 'none' } } } },
+  components: {
+    Button: { baseStyle: { _focus: { boxShadow: 'none' } } },
+    Input: { baseStyle: { _focus: { boxShadow: 'none' } } },
+  },
+
   shadows: { outline: '0 !important' },
   config: {
     useSystemColorMode: false,

@@ -4,15 +4,12 @@ import { observer } from 'mobx-react-lite'
 import { useUIStore } from '../../provider/rootStoreProvider'
 import caro1 from '../../assets/img/carousel/4.png'
 import { ChakraNextImage } from '../common/ChakraNextImage'
+import HeadingContainer from '../common/HeadingContainer'
 const Trending = observer(() => {
   const uiStore = useUIStore()
   return (
     <Flex direction='column'>
-      <Flex bg='sec.300' mt={8} position='relative'>
-        <Text fontSize='2xl' fontWeight='semibold' p={4} color='pr.100'>
-          Trending
-        </Text>
-      </Flex>
+      <HeadingContainer title='Trending' />
       <Flex p={12} align='center' justify='center'>
         <Flex
           direction='column'

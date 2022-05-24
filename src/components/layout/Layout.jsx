@@ -18,21 +18,31 @@ import NavigationMenu from './NavigationMenu'
 import { ChakraNextImage } from '../common/ChakraNextImage'
 import bg from '../../assets/img/bgPattern.png'
 const Layout = observer(({ children }) => {
-  const store = useUIStore()
+  const uiStore = useUIStore()
 
   return (
-    <ChakraProvider theme={store.theme === 'dark' ? darkTheme : lightTheme}>
+    <ChakraProvider theme={uiStore.theme === 'dark' ? darkTheme : lightTheme}>
       <Flex direction='column' h='100vh' position='relative'>
         <Header />
         <NavigationMenu />
-
         <Flex
           bg='sec.150'
           justify='center'
           background={`url('/bg.png')`}
           backgroundSize='256px'
           backgroundRepeat='repeat'>
-          {children}
+          <Flex
+            maxH='calc(100vh - 120px)'
+            minH='calc(100vh - 120px)'
+            overflowY='auto'
+            justify='center'
+            overflowX='hidden'
+            w='100%'
+            css={uiStore.scrollCSS}>
+            <Flex direction='column' w='1400px'>
+              {children}
+            </Flex>
+          </Flex>
         </Flex>
       </Flex>
     </ChakraProvider>

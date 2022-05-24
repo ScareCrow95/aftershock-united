@@ -8,6 +8,10 @@ export class UIStore {
   root = null
   counter = 0
   theme = 'dark'
+  /**
+   * @type {{x:number,y:number,width:number,height:number,id:string}}
+   */
+  popover = null
 
   constructor(root) {
     makeAutoObservable(this)
@@ -20,6 +24,12 @@ export class UIStore {
       this.counter = data
     }
   }
+
+  setPopover = (e, id) => {
+    this.popover = e.target.getBoundingClientRect()
+    this.popover.id = id
+  }
+
   get scrollCSS() {
     return {
       '&::-webkit-scrollbar': {

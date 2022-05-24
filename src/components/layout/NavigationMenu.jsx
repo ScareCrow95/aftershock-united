@@ -9,6 +9,7 @@ import {
   Spacer,
   Text,
 } from '@chakra-ui/react'
+import { useRouter } from 'next/router'
 import { observer } from 'mobx-react-lite'
 import logo from '../../assets/img/logo.png'
 import bg from '../../assets/img/headerBG.png'
@@ -16,6 +17,7 @@ import logoTitle from '../../assets/img/title-logo.png'
 import { MenuData } from '../../constants/menu'
 import { ChakraNextImage } from '../common/ChakraNextImage'
 const NavigationMenu = observer(() => {
+  const router = useRouter()
   return (
     <Flex
       h={16}
@@ -55,8 +57,11 @@ const NavigationMenu = observer(() => {
         <Spacer />
         {MenuData.map((x) => {
           return (
-            <Menu key={x.id}>
-              <MenuButton>
+            <Menu key={x.id} zIndex='5'>
+              <MenuButton
+                onClick={() => {
+                  x.href && router.push(x.href)
+                }}>
                 <Flex align='center'>
                   <Text
                     ml={8}
@@ -65,6 +70,7 @@ const NavigationMenu = observer(() => {
                     color='sec.300'>
                     {x.id}
                   </Text>
+
                   {x.subMenu.length > 0 && (
                     <ChevronDownIcon ml={2} boxSize={5} color='sec.100' />
                   )}

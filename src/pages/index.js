@@ -4,33 +4,34 @@ import { HomeCarousel } from '../components/home/HomeCarousel'
 import Activity from '../components/home/Activity'
 import { useUIStore } from '../provider/rootStoreProvider'
 import Trending from '../components/home/Trending'
+import { _homeData } from '../constants/data/_home'
 
 export default observer(() => {
-  const uiStore = useUIStore()
   return (
     <Flex
-      borderLeftWidth='3px'
-      borderLeftColor='pr.100'
-      bg='sec.100'
       direction='column'
-      w='1400px'
-      overflowY='auto'
-      maxH='calc(100vh - 120px)'
+      borderLeftWidth='3px'
+      borderRightWidth='3px'
+      borderLeftColor='pr.100'
+      borderRightColor='pr.100'
       boxShadow='dark-lg'
-      css={uiStore.scrollCSS}>
-      <Flex direction='column'>
-        <HomeCarousel />
-        <Activity />
-        <Trending />
-      </Flex>
+      bg='sec.100'>
+      <HomeCarousel />
+      <Activity />
+      <Trending />
     </Flex>
   )
 })
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
+  /**
+   * get Data later
+   */
+  const data = _homeData
+
   return {
     props: {
-      hydrationData: { ui: 2 },
+      hydrationData: { homeStore: data },
     },
   }
 }

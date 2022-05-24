@@ -1,5 +1,6 @@
 import { enableStaticRendering } from 'mobx-react-lite'
 import React, { createContext, useContext } from 'react'
+import { HomeStore } from '../store/homeStore'
 import { RootStore } from '../store/rootStore'
 import { UIStore } from '../store/uiStore'
 
@@ -27,6 +28,15 @@ export function useRootStore() {
 export function useUIStore() {
   const { uiStore } = useRootStore()
   return uiStore
+}
+
+/**
+ *
+ * @returns {HomeStore}
+ */
+export function useHomeStore() {
+  const { homeStore } = useRootStore()
+  return homeStore
 }
 
 export function RootStoreProvider({ children, hydrationData }) {
