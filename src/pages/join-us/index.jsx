@@ -4,8 +4,10 @@ import { BsDiscord } from 'react-icons/bs'
 import bg from '../../assets/img/joinusbg.png'
 import { ChakraNextImage } from '../../components/common/ChakraNextImage'
 import ClassIconElement from '../../components/common/ClassIconElement'
+import Activity from '../../components/home/Activity'
 import Trending from '../../components/home/Trending'
 import JoinForm from '../../components/join-us/JoinForm'
+import Questionairre from '../../components/join-us/Questionairre'
 
 const JoinUs = observer(() => {
   return (

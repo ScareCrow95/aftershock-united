@@ -1,4 +1,5 @@
-import { makeAutoObservable } from 'mobx'
+import { makeAutoObservable, observable } from 'mobx'
+import { ClassIcons } from '../assets/img/classIcon/classAssets'
 import { RootStore } from './rootStore'
 
 export class UIStore {
@@ -12,7 +13,10 @@ export class UIStore {
    * @type {{x:number,y:number,width:number,height:number,id:string}}
    */
   popover = null
-
+  /**
+   * @type {Set<string>}
+   */
+  filterClasses = new observable.set()
   constructor(root) {
     makeAutoObservable(this)
     this.root = root
@@ -25,9 +29,12 @@ export class UIStore {
     }
   }
 
-  setPopover = (e, id) => {
+  setPopover = (e, id, type, offsetX = 0, offsetY = 0) => {
     this.popover = e.target.getBoundingClientRect()
+    this.popover.y += offsetY
+    this.popover.x += offsetX
     this.popover.id = id
+    this.popover.type = type
   }
 
   get scrollCSS() {

@@ -160,15 +160,17 @@ const youtubers = [
 const trending = [
   {
     _id: '2',
-    title:
-      'Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra.',
+    title: 'What is the optimal Warband (Group of 8) for getting started?',
     description:
-      'Semper feugiat nibh sed pulvinar proin gravida hendrerit. Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Nibh sed pulvinar proin gravida hendrerit lectus a. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Blandit turpis cursus in hac habitasse platea dictumst quisque. Blandit massa enim nec dui nunc mattis enim. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Amet justo donec enim diam vulputate. Accumsan sit amet nulla facilisi. Arcu bibendum at varius vel pharetra vel turpis. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Sit amet massa vitae tortor condimentum lacinia quis. Bibendum at varius vel pharetra. Duis tristique sollicitudin nibh sit amet.',
+      'The optimal warband is something that will most likely remain mostly the same in-terms of wanting each class because of how the game is designed. There are 8 spots available in a warband, and there are 6 classes in Diablo Immortal on launch, which means 6 of the 8 spots are pretty logical. You should strive to have at least 1 of each class because this will allow your group to evolve with the game and have what you need for different situations in all forms of content.',
     createdOn: 1652910807000,
+    thumbnail:
+      'https://vc-static-server.nyc3.digitaloceanspaces.com/personal/blog-1-thumb.png',
     createdBy: {
       _id: '1',
-      name: 'Danielle Ray',
-      avatar: 'https://randomuser.me/api/portraits/women/2.jpg',
+      name: 'Chosen',
+      avatar:
+        'https://vc-static-server.nyc3.digitaloceanspaces.com/personal/chosen.png',
       rank: 2,
       main: 'barbarian',
       country: 'US',

@@ -5,6 +5,7 @@ import Activity from '../components/home/Activity'
 import { useUIStore } from '../provider/rootStoreProvider'
 import Trending from '../components/home/Trending'
 import { _homeData } from '../constants/data/_home'
+import TierList from '../components/home/TierList'
 
 export default observer(() => {
   return (
@@ -17,6 +18,7 @@ export default observer(() => {
       boxShadow='dark-lg'
       bg='sec.100'>
       <HomeCarousel />
+      <TierList />
       <Activity />
       <Trending />
     </Flex>

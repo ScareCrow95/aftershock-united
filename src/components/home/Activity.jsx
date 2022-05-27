@@ -37,7 +37,7 @@ const Activity = observer(() => {
           })}
         </Flex>
       </Flex>
-      <HeadingContainer title='Aftershock Streamers' my={4} />
+      <HeadingContainer title='Aftershock Creators' my={4} />
       <Flex mb={4} justify='center'>
         {homeStore.liveStreamers.map((x) => {
           return (

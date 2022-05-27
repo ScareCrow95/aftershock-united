@@ -14,6 +14,7 @@ import { ChakraNextImage } from '../common/ChakraNextImage'
 import ClassItem from './ClassPopItem'
 import ClassPopItem from './ClassPopItem'
 import { GRADIENT, GRADIENT_2, GRADIENT_GRAY } from '../../constants/uiData'
+import GemPopItem from './GemPopItem'
 const PopoverBG = observer(() => {
   const uiStore = useUIStore()
 
@@ -24,7 +25,6 @@ const PopoverBG = observer(() => {
           returnFocusOnClose={false}
           isOpen={uiStore.popover}
           onClose={() => (uiStore.popover = null)}
-          placement='right'
           closeOnBlur={false}>
           <PopoverTrigger>
             <Flex
@@ -55,7 +55,8 @@ const PopoverBG = observer(() => {
               }}
               boxShadow='3px 3px 30px black'>
               <Flex flex={1} zIndex={1} bg='sec.100'>
-                <ClassPopItem />
+                {uiStore.popover?.type === 'class' && <ClassPopItem />}
+                {uiStore.popover?.type === 'gem' && <GemPopItem />}
               </Flex>
             </Flex>
           </PopoverContent>

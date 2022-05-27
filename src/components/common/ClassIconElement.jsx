@@ -13,13 +13,17 @@ const ClassIconElement = observer((props) => {
       verticalAlign='middle'
       _hover={{ opacity: 0.4 }}
       onMouseEnter={(e) => {
-        uiStore.setPopover(e, props.id)
+        uiStore.setPopover(e, props.id, 'class')
       }}
       onMouseLeave={(e) => {
         uiStore.popover = null
       }}
       {...props}>
-      <NextImage src={ClassIcons[props.id]} width='30px' height='30px' />
+      <NextImage
+        src={ClassIcons[props.id]}
+        width={props._w || '30px'}
+        height={props._w || '30px'}
+      />
     </Box>
   )
 })

@@ -13,6 +13,7 @@ export const MenuData = [
     ],
     icon: 'classes',
   },
+  { id: 'Gems', subMenu: [], icon: 'home', href: '/gems' },
   { id: 'Join us', subMenu: [], icon: 'home', href: '/join-us' },
   { id: 'Creators', subMenu: [], icon: 'home', href: '/creators' },
 ]

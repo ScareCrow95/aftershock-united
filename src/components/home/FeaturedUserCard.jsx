@@ -61,7 +61,7 @@ const FeaturedUserCard = observer(({ data }) => {
             position='absolute'
             _hover={{ opacity: 0.4 }}
             onMouseEnter={(e) => {
-              uiStore.setPopover(e, user.main)
+              uiStore.setPopover(e, user.main, 'class')
             }}
             onMouseLeave={(e) => {
               uiStore.popover = null
