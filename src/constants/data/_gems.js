@@ -145,7 +145,7 @@ export const _gems = [
     rank5: '10% increased chance of finding Magic Items.',
     name: 'Battleguard',
     id: 'battleguard',
-    rarity: 3,
+    rarity: 2,
   },
   {
     rank1:
@@ -156,7 +156,7 @@ export const _gems = [
     rank5: '10% increased chance of finding Magic Items.',
     name: 'Bloody Reach',
     id: 'bloody',
-    rarity: 3,
+    rarity: 2,
   },
   {
     rank1:
@@ -166,7 +166,7 @@ export const _gems = [
     rank5: '10% increased chance of finding Magic Items.',
     name: "Cutthroat's Grin",
     id: 'cutthroat',
-    rarity: 3,
+    rarity: 2,
   },
   {
     rank1:
@@ -176,7 +176,7 @@ export const _gems = [
     rank5: '10% increased chance of finding Magic Items.',
     name: 'Fervant Fang',
     id: 'fervent',
-    rarity: 3,
+    rarity: 2,
   },
   {
     rank1:
@@ -187,7 +187,7 @@ export const _gems = [
     rank5: '10% increased chance of finding Magic Items.',
     name: 'Lightning Core',
     id: 'lightning',
-    rarity: 3,
+    rarity: 2,
   },
   {
     rank1:
@@ -198,7 +198,7 @@ export const _gems = [
     rank5: '10% increased chance of finding Magic Items.',
     name: 'Power & Command',
     id: 'power',
-    rarity: 3,
+    rarity: 2,
   },
   {
     rank1: 'Heal 5% + 60 Life each time you kill an enemy.',
@@ -207,7 +207,7 @@ export const _gems = [
     rank5: '10% increased chance of finding Magic Items.',
     name: 'The Hunger',
     id: 'hunger',
-    rarity: 3,
+    rarity: 2,
   },
   {
     rank1:
@@ -218,7 +218,7 @@ export const _gems = [
     rank5: '10% increased chance of finding Magic Items.',
     name: 'Unity Crystal',
     id: 'unity',
-    rarity: 3,
+    rarity: 2,
   },
   {
     rank1:

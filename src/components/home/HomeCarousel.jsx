@@ -10,7 +10,7 @@ import { ChakraNextImage } from '../common/ChakraNextImage'
 
 export const HomeCarousel = () => {
   return (
-    <Carousel emulateTouch infiniteLoop showStatus={false}>
+    <Carousel emulateTouch infiniteLoop showStatus={false} showThumbs={false}>
       <Flex position='relative'>
         <ChakraNextImage src={caro1} w='100%' h='300px' />
         <Flex
@@ -24,13 +24,10 @@ export const HomeCarousel = () => {
           pb='40px'
           align='flex-start'>
           <Text fontWeight='bold' fontSize='2xl' color='pr.100'>
-            Non blandit massa
+            Class Tiers and Ranking
           </Text>
           <Text align='left'>
-            Non sodales neque sodales ut etiam sit amet nisl. Ac turpis egestas
-            sed tempus urna et pharetra. Rhoncus aenean vel elit scelerisque
-            mauris pellentesque pulvinar. Sagittis id consectetur purus ut
-            faucibus.
+            Find out which class is right for you begin with!
           </Text>
         </Flex>
       </Flex>

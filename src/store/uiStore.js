@@ -9,6 +9,9 @@ export class UIStore {
   root = null
   counter = 0
   theme = 'dark'
+  selectedGem = 'berserker'
+  isMobile = false
+  showGem = false
   /**
    * @type {{x:number,y:number,width:number,height:number,id:string}}
    */

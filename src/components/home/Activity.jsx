@@ -31,14 +31,14 @@ const Activity = observer(() => {
     <Flex direction='column'>
       <HeadingContainer title='Featured Users' />
       <Flex align='center' direction='column' mt={5}>
-        <Flex>
+        <Flex wrap='wrap' justify='center'>
           {homeStore.featuredUsers.map((x) => {
             return <FeaturedUserCard data={x} key={x._id} />
           })}
         </Flex>
       </Flex>
       <HeadingContainer title='Aftershock Creators' my={4} />
-      <Flex mb={4} justify='center'>
+      <Flex mb={4} justify='center' wrap='wrap'>
         {homeStore.liveStreamers.map((x) => {
           return (
             <Flex

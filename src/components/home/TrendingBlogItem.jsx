@@ -16,7 +16,11 @@ import { ChakraNextImage } from '../common/ChakraNextImage'
 import { truncateString } from '../../constants/utils'
 import BlogWriter from '../common/BlogWriter'
 
+import { useRouter } from 'next/router'
+
 const TrendingBlogItem = observer(({ data }) => {
+  const router = useRouter()
+
   /**
    * @type {Blog}
    */
@@ -30,6 +34,9 @@ const TrendingBlogItem = observer(({ data }) => {
       direction='column'
       borderWidth='2px'
       borderColor='transparent'
+      onClick={() => {
+        router.push(`/blog/${blog._id}`)
+      }}
       cursor='pointer'
       _hover={{
         transform: 'scale(1.04)',

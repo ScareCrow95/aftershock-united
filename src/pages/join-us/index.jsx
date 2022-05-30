@@ -12,8 +12,8 @@ import Questionairre from '../../components/join-us/Questionairre'
 const JoinUs = observer(() => {
   return (
     <Flex
-      borderLeftWidth='3px'
-      borderRightWidth='3px'
+      borderLeftWidth={[0, 0, 0, 0, '3px']}
+      borderRightWidth={[0, 0, 0, 0, '3px']}
       borderLeftColor='pr.100'
       borderRightColor='pr.100'
       direction='column'

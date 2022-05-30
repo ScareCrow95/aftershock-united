@@ -159,7 +159,7 @@ const youtubers = [
 
 const trending = [
   {
-    _id: '2',
+    _id: 'optimal-warband',
     title: 'What is the optimal Warband (Group of 8) for getting started?',
     description:
       'The optimal warband is something that will most likely remain mostly the same in-terms of wanting each class because of how the game is designed. There are 8 spots available in a warband, and there are 6 classes in Diablo Immortal on launch, which means 6 of the 8 spots are pretty logical. You should strive to have at least 1 of each class because this will allow your group to evolve with the game and have what you need for different situations in all forms of content.',
