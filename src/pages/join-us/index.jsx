@@ -4,6 +4,7 @@ import { BsDiscord } from 'react-icons/bs'
 import bg from '../../assets/img/joinusbg.png'
 import { ChakraNextImage } from '../../components/common/ChakraNextImage'
 import ClassIconElement from '../../components/common/ClassIconElement'
+import HeadingContainer from '../../components/common/HeadingContainer'
 import Activity from '../../components/home/Activity'
 import Trending from '../../components/home/Trending'
 import JoinForm from '../../components/join-us/JoinForm'
@@ -43,7 +44,7 @@ const JoinUs = observer(() => {
             </Text>
           </Text>
           <Text bg='rgb(0,0,0,.5)' p={4} mt={6}>
-            is calling all <ClassIconElement id='barbarian' ml={2} />
+            call all <ClassIconElement id='barbarian' ml={2} />
             <ClassIconElement id='wizard' mx={2} />
             <ClassIconElement id='monk' mr={2} />
             <Text as='span' fontSize='lg' fontWeight='semibold'>
@@ -71,6 +72,19 @@ const JoinUs = observer(() => {
           </Flex>
         </Flex>
       </Flex>
+      <HeadingContainer title='About Us' my={8} />
+      <Text px={8}>
+        <Text as='span' fontWeight='semibold' color='pr.100'>
+          Aftershock United
+        </Text>{' '}
+        is a gaming coummunity where everyone from professional content
+        creators, to casual gamers, can be part of a place to play and discuss
+        games together. We are partnered with Aftershock Media Group, a talent
+        agency that represents some of your favorite content creators in the
+        industry. The current focus of our community is getting things rolling
+        with Diablo Immortal, but we do plan to branch out and enjoy many other
+        games together as well.{' '}
+      </Text>
       <JoinForm />
     </Flex>
   )

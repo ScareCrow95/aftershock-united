@@ -50,7 +50,6 @@ const JoinForm = observer(() => {
       <Flex
         direction='column'
         p={8}
-        w='700px'
         alignSelf='center'
         rounded='xl'
         px={16}

@@ -11,7 +11,7 @@ const Trending = observer(() => {
   const homeStore = useHomeStore()
   return (
     <Flex direction='column'>
-      <HeadingContainer title='Trending' />
+      <HeadingContainer title='🔥 Hot Topics 🔥' />
       <Flex wrap='wrap' justify='center'>
         {homeStore.trending.map((x) => {
           return <TrendingBlogItem key={x._id} data={x} />

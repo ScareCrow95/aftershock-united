@@ -13,7 +13,7 @@ const Header = observer(() => {
         Diablo Immortal
       </Text>
       <Spacer />
-      <SocialIcon
+      {/* <SocialIcon
         color='grey.300'
         icon={BsTwitch}
         hover='#A970FF'
@@ -40,7 +40,7 @@ const Header = observer(() => {
         hover='#5662F6'
         boxSize={5}
         mr={2}
-      />
+      /> */}
     </Flex>
   )
 })

@@ -24,7 +24,7 @@ import { useRouter } from 'next/router'
 const OverallRanking = observer(({ desc }) => {
   const [overall] = Tiers.slice(-1)
   const router = useRouter()
-
+  const uiStore = useUIStore()
   return (
     <Flex direction='column'>
       <HeadingContainer title='Overall Ranking' my={5}>
@@ -32,7 +32,7 @@ const OverallRanking = observer(({ desc }) => {
           <Button
             bg='pr.100'
             color='black'
-            size='xs'
+            size={uiStore.isMobile ? 'xs' : 'md'}
             onClick={() => router.push('/tiers')}>
             Read More
           </Button>
@@ -46,6 +46,7 @@ const OverallRanking = observer(({ desc }) => {
               <Flex
                 key={x.id}
                 m={2}
+                role='group'
                 position='relative'
                 borderWidth='2px'
                 borderColor='transparent'
@@ -71,19 +72,25 @@ const OverallRanking = observer(({ desc }) => {
                 <Flex
                   position='absolute'
                   bottom='0'
-                  p={4}
                   bg='rgb(0,0,0,.5)'
+                  _groupHover={{
+                    bg: 'pr.100',
+                    color: 'black',
+                    shadow: 'dark-lg',
+                  }}
                   w='100%'>
-                  <Text fontWeight='semibold'>{x.id.toUpperCase()}</Text>
+                  <Text p={4} py={2} fontWeight='semibold'>
+                    {x.id.toUpperCase()}
+                  </Text>
                   <Spacer />
-                  <Circle
+                  <Center
                     bg='pr.100'
-                    boxSize={7}
-                    fontSize='sm'
+                    px={2}
                     color='black'
-                    fontWeight='bold'>
+                    fontWeight='bold'
+                    _groupHover={{ color: 'white', bg: 'black' }}>
                     <Text>{x.rating.toFixed(1)}</Text>
-                  </Circle>
+                  </Center>
                 </Flex>
               </Flex>
             )

@@ -55,108 +55,6 @@ const featuredUsers = [
   },
 ]
 
-const liveStreamers = [
-  {
-    _id: '1',
-    name: 'Danielle Ray',
-    avatar: 'https://randomuser.me/api/portraits/women/2.jpg',
-    rank: 2,
-    main: 'barbarian',
-    country: 'US',
-    social: {
-      discord: '594',
-      twitch: '594',
-      twitter: '594',
-      insta: '594',
-      facebook: '594',
-      youtube: '594',
-    },
-  },
-  {
-    _id: '3',
-    name: 'Tom Ellis',
-    avatar: 'https://randomuser.me/api/portraits/men/65.jpg',
-    rank: 2,
-    main: 'barbarian',
-    country: 'AU',
-    social: {
-      discord: '594',
-      twitch: '594',
-      twitter: '594',
-      insta: '594',
-      facebook: '594',
-      youtube: '594',
-    },
-  },
-  {
-    _id: '2',
-    name: 'Andrea Holmes',
-    avatar: 'https://randomuser.me/api/portraits/women/22.jpg',
-    rank: 2,
-    main: 'barbarian',
-    country: 'CA',
-    social: {
-      discord: '594',
-      twitch: '594',
-      twitter: '594',
-      insta: '594',
-      facebook: '594',
-      youtube: '594',
-    },
-  },
-]
-
-const youtubers = [
-  {
-    _id: '1',
-    name: 'Fernando Bryant',
-    avatar: 'https://randomuser.me/api/portraits/men/21.jpg',
-    rank: 2,
-    main: 'barbarian',
-    country: 'US',
-    social: {
-      discord: '594',
-      twitch: '594',
-      twitter: '594',
-      insta: '594',
-      facebook: '594',
-      youtube: '594',
-    },
-  },
-  {
-    _id: '3',
-    name: 'Gilbert Mccoy',
-    avatar: 'https://randomuser.me/api/portraits/men/15.jpg',
-    rank: 2,
-    main: 'barbarian',
-    country: 'AU',
-    social: {
-      discord: '594',
-      twitch: '594',
-      twitter: '594',
-      insta: '594',
-      facebook: '594',
-      youtube: '594',
-    },
-  },
-  {
-    _id: '2',
-    name: 'Hailey Henderson',
-    avatar: 'https://randomuser.me/api/portraits/women/12.jpg',
-    rank: 2,
-    main: 'barbarian',
-    country: 'CA',
-    social: {
-      discord: '594',
-      twitch: '594',
-      twitter: '594',
-      insta: '594',
-      facebook: '594',
-      youtube: '594',
-    },
-  },
-]
-
 const trending = [
   {
     _id: 'optimal-warband',
@@ -355,10 +253,90 @@ const recent = [
   },
 ]
 
+const creators = [
+  {
+    _id: 'chosen',
+    name: 'ChoseN',
+    country: 'NA',
+    social: {
+      discord: 'ChoseN#3140',
+      twitch: 'https://www.twitch.tv/chosen',
+      twitter: 'https://twitter.com/ChosenBrad22',
+      youtube: 'https://www.youtube.com/c/ChosenPlaysYT',
+    },
+    about:
+      'Professional gamer and content creator with over 20 years of gaming experience in many different franches including Diablo, Starcraft, Overwatch, RAID, Age of Empires, and Civilization. Currently the project leader of the Aftershock United gaming organization while mainly playing Diablo Immortal, RAID Shadow Legends, and Age of Empires 4.',
+  },
+  {
+    _id: 'veiled',
+    name: 'VeiledShot',
+    country: 'NA',
+    social: {
+      discord: 'VeiledShot#0470',
+      twitch: 'https://www.twitch.tv/veiledshot',
+      twitter: 'https://twitter.com/VeiledshotG',
+      youtube: 'https://www.youtube.com/channel/UCmhwkW_PmsA8qlCuqOkiLCQ',
+    },
+    about:
+      "Previous content creator for ACE, now full time creator for Diablo Immortal with over 14 years of gaming experience (yes I was 6). I've also invested thousands of hours into League of Legends and MMORPGs where I reached Grandmaster at my peak.",
+  },
+  {
+    _id: 'trigger',
+    name: 'TriggerhappyJon',
+    country: 'NA',
+    social: {
+      discord: 'TriggerhappyJon#4934',
+      twitch: 'https://www.twitch.tv/triggerhappyjon',
+      twitter: 'https://twitter.com/TriggerhapyJon',
+      youtube: 'https://www.youtube.com/c/TriggerhappyJon',
+    },
+    about:
+      "TriggerhapyJon | Avid gamer with 28+ years of experience. Passionate content creator specializing in ARPG, MMO, FPS, and Gacha games. My favorite games I play are:  POE, D2, FF14, ESO, COD, Startcraft, Assasins Creed, among others. I'm all about collaborating and enteracting with others while having fun!",
+  },
+  {
+    _id: 'skratch',
+    name: 'Skratch',
+    country: 'NA',
+    social: {
+      discord: 'TriggerhappyJon#4934',
+      twitch: 'https://www.twitch.tv/triggerhappyjon',
+      twitter: 'https://twitter.com/TriggerhapyJon',
+      youtube: 'https://www.youtube.com/c/SkratchPlays',
+    },
+    about:
+      "Gaming content creator and entertainer. I'm a competitive gamer with over 20 year of experience in many different genres! I'm a massive fan of loot based games. My all time favourite franchise is Destiny. My main focus at the moment is on Diablo Immortal & Raid: Shadow Legends. Gaming On & On!",
+  },
+  {
+    _id: 'coldbrew',
+    name: 'Cold Brew',
+    country: 'NA',
+    social: {
+      discord: 'Cold Brew#1222',
+      twitch: 'https://www.twitch.tv/cold_brew_gaming',
+      twitter: 'https://twitter.com/ColdBrewGaming',
+      youtube: 'https://youtube.com/coldbrewgaming',
+    },
+    about:
+      'Content creator for over 3 years with 20+ years of gaming experience.  Currently focusing on Raid:Shadow Legends, Diablo Immortal and other mobile gaming titles.',
+  },
+  {
+    _id: 'leila',
+    name: 'LeilaFox',
+    country: 'NA',
+    social: {
+      discord: 'LeilaFox#5599',
+      twitch: 'https://www.twitch.tv/leilafoxnation',
+      twitter: 'https://twitter.com/leilafoxnation',
+      youtube: 'https://youtube.com/leilafoxnation',
+    },
+    about:
+      'Full-Time Gaming Content Creator that loves sharing positivity, cosplays, entertainment... and of course memes!',
+  },
+]
+
 export const _homeData = {
   featuredUsers,
-  liveStreamers,
   trending,
-  youtubers,
   recent,
+  creators,
 }
